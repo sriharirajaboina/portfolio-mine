@@ -3,11 +3,10 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from "framer-motion"
 
-// const MotionImage=motion(Image)
 const HomePage = () => {
     
   return (
-    <div className="md:mx-50 md:my-10">
+    <div className="mx-10 md:mx-50 md:my-10">
         <motion.div 
         initial={{opacity:0,x:-100}}
         animate={{opacity:1,x:0}}
@@ -15,12 +14,12 @@ const HomePage = () => {
         className="relative text-center py-10 md:py-25">
             <div className="absolute w-72 h-72 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
             left-1/2 top-1"></div>
-            <h1 className="text-[2.5rem] md:text-[4.5rem] font-bold leading-tight
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight
              text-[#ffffff]">
                 Adaptive Logo Design
                 <br/>for Your Brand
             </h1>
-            <div className="flex items-center justify-center mt-15">
+            <div className="flex items-center justify-center mt-5 md:mt-15">
                 <motion.div 
                 whileHover={{scale:1.1,backgroundColor:"orange"}}
                 className="bg-[#cc9966] flex items-center justify-between py-3 px-6 rounded-full
@@ -30,7 +29,7 @@ const HomePage = () => {
                 </motion.div>
             </div>  
         </motion.div>
-        <motion.div className="flex items-center justify-between md:my-30 gap-10">
+        <motion.div className="flex flex-col md:flex-row items-center justify-between md:my-30 gap-10">
             <div className="relative text-[#ffffff]">
                 <div className="absolute w-72 h-72 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
                     -left-1/4 -top-1/4"></div>
@@ -38,14 +37,14 @@ const HomePage = () => {
                 initial={{opacity:0,x:-50}} 
                 whileInView={{opacity:1,x:0}}
                 transition={{duration:0.6,delay:0.2}}
-                className="font-bold text-7xl tracking-wide leading-tighter">
+                className="text-5xl font-bold md:text-7xl tracking-wide leading-tighter">
                     Lets get know about me close
                 </motion.h2>
                 <motion.p 
                 initial={{opacity:0,x:-50}}
                 whileInView={{opacity:1,x:0}}
                 transition={{duration:0.6,delay:0.4}}
-                className="text-xl tracking-wider leading-tight my-8">
+                className="text-base md:text-xl tracking-wider leading-tight my-8">
                     Aaron is a New York-based visual designer focusing on branding and visual
                     identity. Her portfolio showcases her wide range of work,
                     spanning books,posters and web design.
@@ -58,7 +57,7 @@ const HomePage = () => {
                     whileInView={{opacity:1,x:0}}
                     transition={{duration:0.6,delay:0.6}}
                     whileHover={{scale:1.1,backgroundColor:"orange"}} 
-                    className="bg-[#cc9966] py-3 px-6 rounded-full">
+                    className="bg-[#cc9966] py-3 px-6 rounded-full text-sm md:text-base">
                         DISCOVER MORE ABOUT ME
                     </motion.button>
                 </motion.div>
@@ -72,19 +71,19 @@ const HomePage = () => {
                 <Image
                     src="/images/about.png"
                     alt="about"
-                    width={100}
-                    height={100}
+                    width={500}
+                    height={300}
                     className="w-full h-auto"
                     priority
                 />
                 </motion.div>
 
-            <div className="absolute py-20 px-6 border border-amber-500 rounded-full
-            right-1/3 -translate-x-25 translate-y-25">
+            <div className="hidden md:block md:absolute md:py-20 md:px-6 md:border md:border-amber-500 md:rounded-full
+               md:right-1/3 md:-translate-x-25 md:translate-y-25">
             </div>
 
-            <div className="absolute py-5 px-16 border border-amber-500 rounded-full
-            right-1 -translate-x-55 -translate-y-60">
+            <div className="hidden md:block md:absolute md:py-5 md:px-16 md:border md:border-amber-500 md:rounded-full
+               md:right-1 md:-translate-x-55 md:-translate-y-60">
             </div>
         </motion.div>
         <div className="my-30">
@@ -96,7 +95,7 @@ const HomePage = () => {
                     initial={{opacity:0,y:30}}
                     whileInView={{opacity:1,y:0}}
                     transition={{duration:0.6,delay:0.2}}
-                    className="text-center text-7xl font-bold my-10">
+                    className="text-center text-5xl md:text-7xl font-bold my-10">
                         My Projects Highlight
                     </motion.h2>
                 <div className="text-center flex item-center justify-center">
@@ -115,7 +114,7 @@ const HomePage = () => {
                 </div>
                 <motion.div
 
-                className="grid grid-cols-2 my-15 gap-10">
+                className="grid md:grid-cols-2 my-15 gap-10">
                     <motion.div
                     initial={{opacity:0,x:-50}}
                     whileInView={{opacity:1,x:0}}
@@ -126,8 +125,8 @@ const HomePage = () => {
                         alt="p1"
                         width={50}
                         height={50}
-                        className="w-130 h-130"/>
-                        <div className="md:my-10">
+                        className="w-full h-auto"/>
+                        <div className="mt-10 md:my-10">
                             <h2 className="text-3xl font-bold">
                                 Brand Journey Improvements
                             </h2>
@@ -154,8 +153,8 @@ const HomePage = () => {
                         alt="p1"
                         width={50}
                         height={50}
-                        className="w-130 h-130"/>
-                        <div className="md:my-10">
+                        className="w-full h-auto"/>
+                        <div className="mt-10 md:my-10">
                             <h2 className="text-3xl font-bold">
                                 Brand Grouping
                             </h2>
@@ -177,8 +176,8 @@ const HomePage = () => {
                         alt="p1"
                         width={50}
                         height={50}
-                        className="w-130 h-130"/>
-                        <div className="md:my-10">
+                        className="w-full h-auto"/>
+                        <div className="mt-10 md:my-10">
                             <h2 className="text-3xl font-bold">
                                 NFT GLIMPS
                             </h2>
@@ -200,8 +199,8 @@ const HomePage = () => {
                         alt="p1"
                         width={50}
                         height={50}
-                        className="w-130 h-130"/>
-                        <div className="md:my-10">
+                        className="w-full h-auto"/>
+                        <div className="mt-10 md:my-10">
                             <h2 className="text-3xl font-bold">
                                 Brand Suggestions
                             </h2>
@@ -216,7 +215,7 @@ const HomePage = () => {
                 </motion.div>
             </div>
         </div>
-        <div className="text-[#ffffff] flex items-start justify-between ">
+        <div className="text-[#ffffff] flex flex-col md:flex-row items-start justify-between ">
             <div className="relative">
                 <div className="absolute w-72 h-72 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
                     -left-1/6 -translate-y-1/3">
@@ -232,7 +231,7 @@ const HomePage = () => {
                 initial={{opacity:0,x:-50}}
                 whileInView={{opacity:1,x:0}}
                 transition={{duration:0.6,delay:0.2}}
-                className="text-lg text-[#6c727f] mb-10 w-[88%] leading-relaxed tracking-wide"> 
+                className="text-lg text-[#6c727f] mb-10 md:w-[88%] leading-relaxed tracking-wide"> 
                     “Aaronn was fantastic to work with from start to finish. We were looking for a simple, stand-out logo and he delivered. 
                     I tried designing the logo myself thinking I wouldn’t need to pay the money for a professional graphic designer but I was very wrong. 
                     Working with Aaronn was worth every penny and was surprisingly affordable! I remember him saying simplicity is key to a successful logo and boy he was right. 
@@ -255,7 +254,7 @@ const HomePage = () => {
                 alt="testimonial"
                 width={500}
                 height={300}
-                className=""/>
+                className="hidden md:block"/>
             </motion.div>
                 
         </div>

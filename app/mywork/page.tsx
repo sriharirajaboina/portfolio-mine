@@ -9,7 +9,7 @@ const MyWork = () => {
 
   const router=useRouter();
   return (
-    <div className="md:mx-50 md:my-30">
+    <div className="mx-10 my-10 md:mx-50 md:my-30">
       <div className="relative text-[#ffffff] pb-15 border-b-3">
         <div className="absolute w-72 h-56 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
             -left-1/6 -translate-y-1/3 top-1"></div>
@@ -17,14 +17,14 @@ const MyWork = () => {
         initial={{opacity:0,x:-50}}
         whileInView={{opacity:1,x:0}}
         transition={{duration:0.6}} 
-         className="text-7xl font-bold mb-3">
+         className="text-5xl md:text-7xl font-bold mb-3">
           My Works
         </motion.h1>
         <motion.h5 
         initial={{opacity:0,x:-50}}
         whileInView={{opacity:1,x:0}}
         transition={{duration:0.6}} 
-        className="text-[#d3d5da]  ">
+        className="text-[#d3d5da] text-sm md:text-base">
           Showcase About Works
         </motion.h5>
       </div>
@@ -82,7 +82,7 @@ const MyWork = () => {
             </div>
           </motion.div>
         </div>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 gap-5">
           <motion.div
           initial={{opacity:0,x:-100}}
           whileInView={{opacity:1,x:0}}

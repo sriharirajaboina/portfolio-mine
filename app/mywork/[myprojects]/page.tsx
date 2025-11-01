@@ -7,7 +7,7 @@ const MotionImage=motion(Image)
 
 const MyProject = () => {
   return (
-    <div className="md:mx-50 md:my-30 text-[#ffffff]">
+    <div className="mx-10 my-10 md:mx-50 md:my-30 text-[#ffffff]">
       <div className="relative pb-15 border-b-3">
         <div className="absolute w-72 h-48 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
             -left-1/6 -translate-y-1/2"></div>
@@ -15,14 +15,14 @@ const MyProject = () => {
         initial={{opacity:0,x:-50}}
         whileInView={{opacity:1,x:0}}
         transition={{duration:0.6}}  
-        className="text-7xl font-bold mb-3">
+        className="text-5xl md:text-7xl font-bold mb-3">
           Project Detail
         </motion.h1>
         <motion.h5 
            initial={{opacity:0,x:-50}}
           whileInView={{opacity:1,x:0}}
           transition={{duration:0.6}}
-          className="text-[#d3d5da]">
+          className="text-[#d3d5da] text-sm md:text-base">
           Details About The Project
         </motion.h5>
       </div>
@@ -41,7 +41,7 @@ const MyProject = () => {
           initial={{opacity:0,x:-100}}
           whileInView={{opacity:1,x:0}}
           transition={{duration:0.6}}
-          className="mx-50 my-10">
+          className="my-5 md:mx-50 md:my-10">
             <h3 className="text-3xl font-bold mb-5">
               Project Story
             </h3>
@@ -56,8 +56,8 @@ const MyProject = () => {
           </motion.div>
           
         </div>
-        <div className="md:my-15">
-          <div className="grid grid-cols-2">
+        <div className="my-5 md:my-15">
+          <div className="grid grid-cols-2 gap-5 ">
             <MotionImage
              src="/images/pg2.png"
               alt="pg2"
@@ -80,7 +80,7 @@ const MyProject = () => {
             initial={{opacity:0,x:-100}}
             whileInView={{opacity:1,x:0}}
             transition={{duration:0.6}} 
-            className="mx-50 my-10">
+            className="md:mx-50 my-10">
               <h3 className="text-3xl font-bold mb-5">
                 Day one
               </h3>
@@ -119,7 +119,7 @@ const MyProject = () => {
         initial={{opacity:0,y:50}}
         whileInView={{opacity:1,y:0}}
         transition={{duration:0.6}}
-        className="md:my-15 uppercase text-4xl text-center
+        className="my-10 md:my-15 uppercase text-4xl text-center
         font-bold">
           other Projects
         </motion.h1>

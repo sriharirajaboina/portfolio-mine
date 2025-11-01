@@ -8,7 +8,7 @@ const MotionImage=motion(Image)
 const Footer = () => {
   return (
     <div className="bg-black ">
-        <div className="md:mx-50">
+        <div className="mx-10 md:mx-50">
             <div className="text-center">
                 <motion.h5 
                 initial={{opacity:0,y:-40}}
@@ -21,8 +21,8 @@ const Footer = () => {
                 initial={{opacity:0,y:-40}}
                 whileInView={{opacity:1,y:0}}
                 transition={{duration:0.6,delay:0.2}}
-                className="text-[#ffffff] text-6xl font-bold
-                tracking-wide mb-30 border-b-5 inline-block pb-1">
+                className="text-[#ffffff] text-4xl md:text-6xl font-bold
+                tracking-wide mb-30 border-b-3 md:border-b-5 inline-block pb-1">
                     info@aaronn.com
                 </motion.h1>
 
@@ -32,8 +32,8 @@ const Footer = () => {
                 <MotionImage 
                 src="/images/logo.png"
                 alt="footer-logo"
-                width={100} 
-                height={100}
+                width={500} 
+                height={300}
                 className="w-30 h-10"
                 initial={{opacity:0,x:-50}}
                 whileInView={{opacity:1,x:0}}
@@ -79,8 +79,8 @@ const Footer = () => {
               initial={{opacity:0,y:30}}
               whileInView={{opacity:1,y:0}}
               transition={{duration:0.6,delay:0.6}}
-            className="text-[#ffffff] text-center mt-15 text-2xl font-bold
-            border-t-2 py-20">
+            className="text-[#ffffff] text-center mt-15 text-base md:text-2xl font-bold
+            border-t-2 py-10 md:py-20">
                 © 2023. Ideapeel. All rights reserved. 
             </motion.div>
         </div>

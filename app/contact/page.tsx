@@ -7,7 +7,7 @@ const MotionImage=motion(Image)
 
 const Contact = () => {
   return (
-    <div className="md:mx-50 my-20 text-[#ffffff]">
+    <div className="mx-10 md:mx-50 md:my-20 text-[#ffffff]">
       <div className="relative my-10 font-bold pb-10 border-b-2">
         <div className="absolute w-72 h-57 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
             -left-1/6 -translate-y-1/2"></div>
@@ -15,14 +15,14 @@ const Contact = () => {
            initial={{opacity:0,x:-50}}
             whileInView={{opacity:1,x:0}}
             transition={{duration:0.6}} 
-            className="text-7xl ">
+            className="text-5xl md:text-7xl ">
           Contact Me
         </motion.h1>
         <motion.h5 
          initial={{opacity:0,x:-50}}
          whileInView={{opacity:1,x:0}}
          transition={{duration:0.6}}
-         className="text-base text-[#d3d5da]">
+         className="text-sm md:text-base text-[#d3d5da]">
           For Any Project Knock Us
         </motion.h5>
       </div>
@@ -32,7 +32,7 @@ const Contact = () => {
            initial={{opacity:0,x:-100}}
            whileInView={{opacity:1,x:0}}
            transition={{duration:0.6}}
-          className="text-7xl font-bold tracking-widest">
+          className="text-6xl md:text-7xl font-bold tracking-widest">
             Get in Touch with Us
           </motion.h1>
           <motion.form 
@@ -40,7 +40,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", staggerChildren: 0.2 }}
           viewport={{ once: true, amount: 0.3 }}>
-            <div className="uppercase font-bold text-base">
+            <div className="uppercase font-bold text-sm md:text-base">
               <motion.h2 
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
