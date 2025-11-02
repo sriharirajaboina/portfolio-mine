@@ -14,7 +14,7 @@ const HomePage = () => {
         className="relative text-center py-10 md:py-25">
             <div className="absolute w-48 h-36 md:w-72 md:h-72 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
             left-1/2 top-1"></div>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight
+            <h1 className="text-3xl sm:text-4xl md:text-6xl xl:text-7xl font-bold leading-tight
              text-[#ffffff]">
                 Adaptive Logo Design
                 <br/>for Your Brand
@@ -37,7 +37,7 @@ const HomePage = () => {
                 initial={{opacity:0,x:-50}} 
                 whileInView={{opacity:1,x:0}}
                 transition={{duration:0.6,delay:0.2}}
-                className="text-4xl sm:text-5xl font-bold md:text-7xl tracking-wide leading-tighter">
+                className="text-3xl sm:text-4xl font-bold md:text-6xl xl:text-7xl tracking-wide leading-tighter">
                     Lets get know about me close
                 </motion.h2>
                 <motion.p 
@@ -95,7 +95,7 @@ const HomePage = () => {
                     initial={{opacity:0,y:30}}
                     whileInView={{opacity:1,y:0}}
                     transition={{duration:0.6,delay:0.2}}
-                    className="text-center text-4xl sm:text-5xl md:text-7xl font-bold my-10">
+                    className="text-center text-3xl sm:text-4xl md:text-6xl xl:text-7xl font-bold my-10">
                         My Projects Highlight
                     </motion.h2>
                 <div className="text-center flex item-center justify-center">
