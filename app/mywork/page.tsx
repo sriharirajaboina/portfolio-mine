@@ -1,13 +1,13 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import { useRouter } from 'next/navigation'
+
 import { motion } from "framer-motion"
 
 const MotionImage=motion(Image)
 const MyWork = () => {
 
-  const router=useRouter();
+  
   return (
     <div className="mx-4 sm:mx-8 md:mx-25 my-10 md:my-20 ">
       <div className="relative text-[#ffffff] pb-10 border-b-3 border-[#ffffff] ">
@@ -180,7 +180,6 @@ const MyWork = () => {
         className="flex itema-center justify-center">
           <motion.button
             whileHover={{scale:1.1,backgroundColor:"white"}}
-          onClick={()=>router.push("/mywork/myproject")} 
           className="bg-trasparent py-3 px-6 border border-amber-500 rounded-full
          text-amber-600 text-sm font-bold">
           LOAD MORE WORKS

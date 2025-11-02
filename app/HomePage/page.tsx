@@ -2,8 +2,11 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from "framer-motion"
+import { useRouter } from 'next/navigation'
 
 const HomePage = () => {
+
+    const router=useRouter();
     
   return (
     <div className="mx-10 md:mx-25 md:my-10">
@@ -14,7 +17,7 @@ const HomePage = () => {
         className="relative text-center py-10 md:py-25">
             <div className="absolute w-48 h-36 md:w-72 md:h-72 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
             left-1/2 top-1"></div>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl xl:text-7xl font-bold leading-tight
+            <h1 className="text-xl sm:text-4xl md:text-6xl xl:text-7xl font-bold leading-tight
              text-[#ffffff]">
                 Adaptive Logo Design
                 <br/>for Your Brand
@@ -95,7 +98,7 @@ const HomePage = () => {
                     initial={{opacity:0,y:30}}
                     whileInView={{opacity:1,y:0}}
                     transition={{duration:0.6,delay:0.2}}
-                    className="text-center text-3xl sm:text-4xl md:text-6xl xl:text-7xl font-bold my-10">
+                    className="text-center text-xl sm:text-4xl md:text-6xl xl:text-7xl font-bold my-10">
                         My Projects Highlight
                     </motion.h2>
                 <div className="text-center flex item-center justify-center">
@@ -106,7 +109,7 @@ const HomePage = () => {
                      whileHover={{scale:1.1,backgroundColor:"black"}}
                     className="bg-transparent border border-amber-500 py-3 px-6 rounded-full font-bold">
                         <motion.button
-                       >
+                         onClick={()=>router.push("/HomePage/myprojects")} >
                             EXPLORE MORE
                         </motion.button>
                         <span className="ml-4 text-2xl">&#8594;</span>
@@ -215,7 +218,7 @@ const HomePage = () => {
                 </motion.div>
             </div>
         </div>
-        <div className="text-[#ffffff] flex flex-col md:flex-row items-start justify-between ">
+        <div className="text-[#ffffff] flex flex-col md:flex-row items-start justify-between mb-10">
             <div className="relative">
                 <div className="absolute w-72 h-72 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
                     -left-1/6 -translate-y-1/3">
