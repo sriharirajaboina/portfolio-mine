@@ -7,7 +7,7 @@ const MotionImage = motion(Image)
 
 const Footer = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-black overflow-x-hidden">
       <div className="px-6 sm:px-10 md:px-20 lg:px-40">
         <div className="text-center">
           <motion.h5

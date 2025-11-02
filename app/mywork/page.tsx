@@ -9,15 +9,15 @@ const MyWork = () => {
 
   const router=useRouter();
   return (
-    <div className="mx-10 my-10 md:mx-50 md:my-30">
-      <div className="relative text-[#ffffff] pb-15 border-b-3">
+    <div className="mx-4 sm:mx-8 md:mx-25 my-10 md:my-20 ">
+      <div className="relative text-[#ffffff] pb-10 border-b-3 border-[#ffffff] ">
         <div className="absolute w-72 h-56 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
             -left-1/6 -translate-y-1/3 top-1"></div>
         <motion.h1
         initial={{opacity:0,x:-50}}
         whileInView={{opacity:1,x:0}}
         transition={{duration:0.6}} 
-         className="text-5xl md:text-7xl font-bold mb-3">
+         className="text-4xl sm:text-5xl md:text-7xl font-bold mb-3">
           My Works
         </motion.h1>
         <motion.h5 
@@ -28,8 +28,8 @@ const MyWork = () => {
           Showcase About Works
         </motion.h5>
       </div>
-      <div className="mt-15 ">
-        <div className="grid grid-cols-3 gap-5">
+      <div className="mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <motion.div
           initial={{opacity:0,x:-100}}
           whileInView={{opacity:1,x:0}}
@@ -43,8 +43,8 @@ const MyWork = () => {
              whileInView={{ clipPath: "inset(0 0% 0 0)" }}
             transition={{ duration: 1,ease: "easeInOut" }}/>
             <div className="my-10 text-center text-[#ffffff]">
-              <h4 className="font-bold text-sm">BLUE</h4>
-              <h2 className="font-bold text-lg">Orvillebury</h2>
+              <h4 className="font-bold text-xs md:text-sm">BLUE</h4>
+              <h2 className="font-bold text-base md:text-lg">Orvillebury</h2>
             </div>
           </motion.div>
           <motion.div
@@ -60,8 +60,8 @@ const MyWork = () => {
             whileInView={{ clipPath: "inset(0 0% 0 0)" }}
             transition={{ duration: 1,delay:0.2, ease: "easeInOut" }}/>
             <div className="my-10 text-center text-[#ffffff]">
-              <h4 className="font-bold text-sm">GREEN</h4>
-              <h2 className="font-bold text-lg">West Lavada</h2>
+              <h4 className="font-bold text-xs md:text-sm">GREEN</h4>
+              <h2 className="font-bold text-base md:text-lg">West Lavada</h2>
             </div>
           </motion.div>
           <motion.div
@@ -77,12 +77,12 @@ const MyWork = () => {
             whileInView={{ clipPath: "inset(0 0% 0 0)" }}
             transition={{ duration: 1, delay:0.3,ease: "easeInOut" }}/>
             <div className="my-10 text-center text-[#ffffff]">
-              <h4 className="font-bold text-sm">AQUA</h4>
-              <h2 className="font-bold text-lg">Rempeishire</h2>
+              <h4 className="font-bold text-xs md:text-sm">AQUA</h4>
+              <h2 className="font-bold text-base md:text-lg">Rempeishire</h2>
             </div>
           </motion.div>
         </div>
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <motion.div
           initial={{opacity:0,x:-100}}
           whileInView={{opacity:1,x:0}}
@@ -97,8 +97,8 @@ const MyWork = () => {
             whileInView={{ clipPath: "inset(0 0% 0 0)" }}
             transition={{ duration: 1, delay:0.4,ease: "easeInOut" }}/>
             <div className="my-10 text-center text-[#ffffff]">
-              <h4 className="font-bold text-sm">LIME</h4>
-              <h2 className="font-bold text-lg">Delfinaland</h2>
+              <h4 className="font-bold text-xs md:text-sm">LIME</h4>
+              <h2 className="font-bold text-base md:text-lg">Delfinaland</h2>
             </div> 
           </motion.div>
           <motion.div
@@ -114,13 +114,13 @@ const MyWork = () => {
             whileInView={{ clipPath: "inset(0 0% 0 0)" }}
             transition={{ duration: 1,delay:0.5, ease: "easeInOut" }}/>
             <div className="my-10 text-center text-[#ffffff]">
-               <h4 className="font-bold text-sm">FUCHSIA</h4>
-              <h2>Backridgeburgh</h2>
+               <h4 className="font-bold text-xs md:text-sm">FUCHSIA</h4>
+              <h2 className="font-bold text-base md:text-lg">Backridgeburgh</h2>
             </div>
            
           </motion.div>
         </div>
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <motion.div
            initial={{opacity:0,x:-100}}
           whileInView={{opacity:1,x:0}}
@@ -134,8 +134,8 @@ const MyWork = () => {
             whileInView={{ clipPath: "inset(0 0% 0 0)" }}
             transition={{ duration: 1, delay:0.6,ease: "easeInOut" }}/>
             <div className="my-10 text-center text-[#ffffff]">
-               <h4 className="font-bold text-sm">AQUA</h4>
-              <h2 className="font-bold text-lg">Rempeishire</h2>
+               <h4 className="font-bold text-xs md:text-sm">AQUA</h4>
+              <h2 className="font-bold text-base md:text-lg">Rempeishire</h2>
             </div>
           </motion.div>
           <motion.div
@@ -151,8 +151,8 @@ const MyWork = () => {
             whileInView={{ clipPath: "inset(0 0% 0 0)" }}
             transition={{ duration: 1,delay:0.7, ease: "easeInOut" }}/>
             <div className="my-10 text-center text-[#ffffff]">
-              <h4 className="font-bold text-sm">MAROON</h4>
-              <h2 className="font-bold text-lg">Lake Trevor</h2>
+              <h4 className="font-bold text-xs md:text-sm">MAROON</h4>
+              <h2 className="font-bold text-base md:text-lg">Lake Trevor</h2>
             </div> 
           </motion.div>
           <motion.div
@@ -168,8 +168,8 @@ const MyWork = () => {
             whileInView={{ clipPath: "inset(0 0% 0 0)" }}
             transition={{ duration: 1, delay:0.8,ease: "easeInOut" }}/>
             <div className="my-10 text-center text-[#ffffff]">
-              <h4 className="font-bold text-sm">LIME</h4>
-              <h2 className="font-bold text-lg">Delfinaland</h2>
+              <h4 className="font-bold text-xs md:text-sm">LIME</h4>
+              <h2 className="font-bold text-base md:text-lg">Delfinaland</h2>
             </div>
           </motion.div>
         </div>

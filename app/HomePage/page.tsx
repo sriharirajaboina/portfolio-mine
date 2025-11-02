@@ -6,15 +6,15 @@ import { motion } from "framer-motion"
 const HomePage = () => {
     
   return (
-    <div className="mx-10 md:mx-50 md:my-10">
+    <div className="mx-10 md:mx-25 md:my-10">
         <motion.div 
         initial={{opacity:0,x:-100}}
         animate={{opacity:1,x:0}}
         transition={{duration:0.6}}
         className="relative text-center py-10 md:py-25">
-            <div className="absolute w-72 h-72 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
+            <div className="absolute w-48 h-36 md:w-72 md:h-72 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
             left-1/2 top-1"></div>
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight
              text-[#ffffff]">
                 Adaptive Logo Design
                 <br/>for Your Brand
@@ -37,7 +37,7 @@ const HomePage = () => {
                 initial={{opacity:0,x:-50}} 
                 whileInView={{opacity:1,x:0}}
                 transition={{duration:0.6,delay:0.2}}
-                className="text-5xl font-bold md:text-7xl tracking-wide leading-tighter">
+                className="text-4xl sm:text-5xl font-bold md:text-7xl tracking-wide leading-tighter">
                     Lets get know about me close
                 </motion.h2>
                 <motion.p 
@@ -78,24 +78,24 @@ const HomePage = () => {
                 />
                 </motion.div>
 
-            <div className="hidden md:block md:absolute md:py-20 md:px-6 md:border md:border-amber-500 md:rounded-full
-               md:right-1/3 md:-translate-x-25 md:translate-y-25">
+            <div className="hidden xl:block xl:absolute xl:py-20 xl:px-6 xl:border xl:border-amber-500 xl:rounded-full
+               xl:right-1/3 xl:-translate-x-30 xl:translate-y-25">
             </div>
 
-            <div className="hidden md:block md:absolute md:py-5 md:px-16 md:border md:border-amber-500 md:rounded-full
-               md:right-1 md:-translate-x-55 md:-translate-y-60">
+            <div className="hidden xl:block xl:absolute xl:py-5 xl:px-16 xl:border xl:border-amber-500 xl:rounded-full
+               xl:right-1 xl:-translate-x-55 xl:-translate-y-78">
             </div>
         </motion.div>
         <div className="my-30">
             <div className="relative text-[#ffffff] ">
 
-                <div className="absolute w-72 h-56 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
+                <div className="absolute w-48 md:w-72 h-36 md:h-56 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
                     left-1/2 -translate-y-1/2"></div>
                     <motion.h2 
                     initial={{opacity:0,y:30}}
                     whileInView={{opacity:1,y:0}}
                     transition={{duration:0.6,delay:0.2}}
-                    className="text-center text-5xl md:text-7xl font-bold my-10">
+                    className="text-center text-4xl sm:text-5xl md:text-7xl font-bold my-10">
                         My Projects Highlight
                     </motion.h2>
                 <div className="text-center flex item-center justify-center">
@@ -127,7 +127,7 @@ const HomePage = () => {
                         height={50}
                         className="w-full h-auto"/>
                         <div className="mt-10 md:my-10">
-                            <h2 className="text-3xl font-bold">
+                            <h2 className="text-xl md:text-3xl font-bold mb-5">
                                 Brand Journey Improvements
                             </h2>
                             <h5 className="text-[#4d5461]">
@@ -155,7 +155,7 @@ const HomePage = () => {
                         height={50}
                         className="w-full h-auto"/>
                         <div className="mt-10 md:my-10">
-                            <h2 className="text-3xl font-bold">
+                            <h2 className="text-xl md:text-3xl font-bold mb-5">
                                 Brand Grouping
                             </h2>
                             <h5 className="text-[#4d5461]">Client : 
@@ -178,7 +178,7 @@ const HomePage = () => {
                         height={50}
                         className="w-full h-auto"/>
                         <div className="mt-10 md:my-10">
-                            <h2 className="text-3xl font-bold">
+                            <h2 className="text-xl md:text-3xl font-bold mb-5">
                                 NFT GLIMPS
                             </h2>
                             <h5 className="text-[#4d5461]">Client : 
@@ -201,7 +201,7 @@ const HomePage = () => {
                         height={50}
                         className="w-full h-auto"/>
                         <div className="mt-10 md:my-10">
-                            <h2 className="text-3xl font-bold">
+                            <h2 className="text-xl md:text-3xl font-bold mb-5">
                                 Brand Suggestions
                             </h2>
                             <h5 className="text-[#4d5461]">Client : 
@@ -224,14 +224,14 @@ const HomePage = () => {
                 initial={{opacity:0,x:-50}}
                 whileInView={{opacity:1,x:0}}
                 transition={{duration:0.6}}
-                className="text-6xl font-bold mb-10 tracking-wide">
+                className="text-4xl md:text-6xl font-bold mb-10 tracking-wide">
                     Testimonial
                 </motion.h1>
                 <motion.p 
                 initial={{opacity:0,x:-50}}
                 whileInView={{opacity:1,x:0}}
                 transition={{duration:0.6,delay:0.2}}
-                className="text-lg text-[#6c727f] mb-10 md:w-[88%] leading-relaxed tracking-wide"> 
+                className="text-sm md:text-lg text-[#6c727f] mb-10 md:w-[88%] leading-relaxed tracking-wide"> 
                     “Aaronn was fantastic to work with from start to finish. We were looking for a simple, stand-out logo and he delivered. 
                     I tried designing the logo myself thinking I wouldn’t need to pay the money for a professional graphic designer but I was very wrong. 
                     Working with Aaronn was worth every penny and was surprisingly affordable! I remember him saying simplicity is key to a successful logo and boy he was right. 
@@ -241,7 +241,7 @@ const HomePage = () => {
                  initial={{opacity:0,x:-50}}
                  whileInView={{opacity:1,x:0}}
                  transition={{duration:0.6,delay:0.4}}
-                 className="text-xl font-bold tracking-wide">
+                 className="text-lg md:text-xl font-bold tracking-wide">
                     -Martin lee
                 </motion.h2>
             </div>

@@ -7,32 +7,32 @@ const MotionImage=motion(Image)
 
 const Contact = () => {
   return (
-    <div className="mx-10 md:mx-50 md:my-20 text-[#ffffff]">
-      <div className="relative my-10 font-bold pb-10 border-b-2">
-        <div className="absolute w-72 h-57 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
-            -left-1/6 -translate-y-1/2"></div>
+    <div className="mx-6 md:mx-25 md:my-5 text-[#ffffff] overflow-hidden md:overflow-visible">
+      <div className="relative font-bold py-10 border-b-2 border-[#394150]">
+        <div className="absolute w-48 md:w-72 h-32 md:h-48 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
+            -left-1/12 -translate-y-1/12"></div>
           <motion.h1
            initial={{opacity:0,x:-50}}
             whileInView={{opacity:1,x:0}}
             transition={{duration:0.6}} 
-            className="text-5xl md:text-7xl ">
+            className="text-4xl sm:text-5xl md:text-7xl ">
           Contact Me
         </motion.h1>
         <motion.h5 
          initial={{opacity:0,x:-50}}
          whileInView={{opacity:1,x:0}}
          transition={{duration:0.6}}
-         className="text-sm md:text-base text-[#d3d5da]">
+         className="text-xs sm:text-sm md:text-base text-[#d3d5da] mt-5 ">
           For Any Project Knock Us
         </motion.h5>
       </div>
       <div>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start my-10 md:my-20">
           <motion.h1 
            initial={{opacity:0,x:-100}}
            whileInView={{opacity:1,x:0}}
            transition={{duration:0.6}}
-          className="text-6xl md:text-7xl font-bold tracking-widest">
+          className="text-3xl sm:text-4xl xl:text-7xl font-bold tracking-widest">
             Get in Touch with Us
           </motion.h1>
           <motion.form 
@@ -73,7 +73,7 @@ const Contact = () => {
             </div>
           </motion.form>
         </div>
-        <div className="flex flex-col my-10">
+        <div className="flex flex-col my-10 ">
           <MotionImage 
           src="/images/contact.png"
           alt="contact"
@@ -87,8 +87,8 @@ const Contact = () => {
           initial={{opacity:0,y:50}}
           whileInView={{opacity:1,y:0}}
           transition={{duration:0.6,staggerChildren:0.3}}
-          className="my-10 flex items-center justify-evenly
-          font-bold text-lg">
+          className="my-10 flex flex-col sm:flex-row items-center justify-evenly
+          gap-4 sm:gap-10 font-bold text-sm sm:text-lg text-center">
             <motion.h3 
             initial={{opacity:0,y:50}}
             whileInView={{opacity:1,y:0}}

@@ -7,7 +7,7 @@ const MotionImage=motion(Image)
 
 const MyProject = () => {
   return (
-    <div className="mx-10 my-10 md:mx-50 md:my-30 text-[#ffffff]">
+    <div className="mx-10 my-10 md:mx-50 md:my-30 text-[#ffffff] ">
       <div className="relative pb-15 border-b-3">
         <div className="absolute w-72 h-48 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
             -left-1/6 -translate-y-1/2"></div>
@@ -15,7 +15,7 @@ const MyProject = () => {
         initial={{opacity:0,x:-50}}
         whileInView={{opacity:1,x:0}}
         transition={{duration:0.6}}  
-        className="text-5xl md:text-7xl font-bold mb-3">
+        className="text-4xl sm:text-5xl md:text-7xl font-bold mb-3">
           Project Detail
         </motion.h1>
         <motion.h5 
@@ -42,14 +42,14 @@ const MyProject = () => {
           whileInView={{opacity:1,x:0}}
           transition={{duration:0.6}}
           className="my-5 md:mx-50 md:my-10">
-            <h3 className="text-3xl font-bold mb-5">
+            <h3 className="text-xl md:text-3xl font-bold mb-5">
               Project Story
             </h3>
-            <p className="text-[#d3d5da] text-sm mb-5 tracking-wide leading-normal">
+            <p className="text-[#d3d5da] text-xs md:text-sm mb-5 tracking-wide leading-normal">
               The fact that photography has different meanings to different people is one of the many components of its appeal. 
               Photography is such an important part of our life that it is now very difficult to imagine the world without it.
             </p>
-            <p className="text-[#d3d5da] tracking-tight leading-normal">
+            <p className="text-[#d3d5da] text-xs md:text-sm tracking-tight leading-normal">
               We cannot imagine a wedding without the opportunity to capture it on film, 
               we would not be able to remember the growing up of children or the holidays if we did not have pictures.
             </p>
@@ -84,10 +84,10 @@ const MyProject = () => {
               <h3 className="text-3xl font-bold mb-5">
                 Day one
               </h3>
-              <p className="text-[#d3d5da] text-sm mb-8 tracking-wide leading-normal">
+              <p className="text-[#d3d5da] text-xs md:text-sm mb-8 tracking-wide leading-normal">
                 Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more. 
               </p>
-              <p className="text-[#d3d5da] tracking-tight leading-normal">
+              <p className="text-[#d3d5da] text-xs md:text-sm tracking-tight leading-normal">
                 And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination 
                 of thought imagination, visual design, technical skills and organizational skills
               </p>
@@ -119,7 +119,7 @@ const MyProject = () => {
         initial={{opacity:0,y:50}}
         whileInView={{opacity:1,y:0}}
         transition={{duration:0.6}}
-        className="my-10 md:my-15 uppercase text-4xl text-center
+        className="my-10 md:my-15 uppercase text-xl md:text-4xl text-center
         font-bold">
           other Projects
         </motion.h1>
