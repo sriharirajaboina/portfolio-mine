@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="px-6 md:px-16 py-4 bg-black text-white overflow-x-hidden relative">
+    <nav className="px-6 md:px-16 py-4 text-[#ffffff] overflow-x-hidden relative">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
