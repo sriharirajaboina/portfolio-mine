@@ -25,7 +25,7 @@ const HomePage = () => {
             <div className="flex items-center justify-center mt-5 md:mt-15">
                 <motion.div 
                 whileHover={{scale:1.1,backgroundColor:"orange"}}
-                className="bg-[#cc9966] flex items-center justify-between py-3 px-6 rounded-full
+                className="bg-[#ff9142] flex items-center justify-between py-3 px-6 rounded-full
                 font-bold text-[#ffffff] cursor-pointer">
                     <button className="mr-3 ">EXPLORE WORKS</button>
                     <span className="text-2xl font-bold">&#8594;</span>
@@ -33,21 +33,21 @@ const HomePage = () => {
             </div>  
         </motion.div>
         <motion.div className="flex flex-col md:flex-row items-center justify-between md:my-30 gap-10">
-            <div className="relative text-[#ffffff]">
+        <div className="relative text-[#ffffff]">
                 <div className="absolute w-72 h-72 opacity-70 rounded-full bg-[#ffffff]/30 blur-3xl
                     -left-1/4 -top-1/4"></div>
                 <motion.h2
                 initial={{opacity:0,x:-50}} 
                 whileInView={{opacity:1,x:0}}
                 transition={{duration:0.6,delay:0.2}}
-                className="text-3xl sm:text-4xl font-bold md:text-6xl xl:text-7xl tracking-wide leading-tighter">
+                className="text-3xl sm:text-4xl font-bold lg:text-6xl xl:text-7xl tracking-wide leading-tighter">
                     Lets get know about me close
                 </motion.h2>
                 <motion.p 
                 initial={{opacity:0,x:-50}}
                 whileInView={{opacity:1,x:0}}
                 transition={{duration:0.6,delay:0.4}}
-                className="text-base md:text-xl tracking-wider leading-tight my-8">
+                className="text-base md:text-lg lg:text-xl tracking-wider leading-tight my-8">
                     Aaron is a New York-based visual designer focusing on branding and visual
                     identity. Her portfolio showcases her wide range of work,
                     spanning books,posters and web design.
@@ -60,34 +60,54 @@ const HomePage = () => {
                     whileInView={{opacity:1,x:0}}
                     transition={{duration:0.6,delay:0.6}}
                     whileHover={{scale:1.1,backgroundColor:"orange"}} 
-                    className="bg-[#cc9966] py-3 px-6 rounded-full text-sm md:text-base">
+                    className="bg-[#ff9142] py-3 px-6 rounded-full text-sm md:text-base">
                         DISCOVER MORE ABOUT ME
                     </motion.button>
                 </motion.div>
             </div>
+            <div className="relative w-full flex justify-center items-center">
+            
             <motion.div
                 initial={{ clipPath: "inset(0 100% 0 0)" }}
                 whileInView={{ clipPath: "inset(0 0% 0 0)" }}
                 transition={{ duration: 1, ease: "easeInOut" }}
-                className="relative w-full h-auto"
-                >
+                className="relative w-full max-w-[900px] mx-auto overflow-visible"  // ✅ allow borders to extend outside
+            >
+            
                 <Image
-                    src="/images/about.png"
-                    alt="about"
-                    width={500}
-                    height={300}
-                    className="w-full h-auto"
-                    priority
+                src="/images/about.png"
+                alt="about"
+                width={800}
+                height={500}
+                className="relative w-full h-auto object-cover rounded-lg"
+                priority
                 />
-                </motion.div>
-
-            <div className="hidden xl:block xl:absolute xl:py-20 xl:px-6 xl:border xl:border-amber-500 xl:rounded-full
-               xl:right-1/3 xl:-translate-x-30 xl:translate-y-25">
-            </div>
-
-            <div className="hidden xl:block xl:absolute xl:py-5 xl:px-16 xl:border xl:border-amber-500 xl:rounded-full
-               xl:right-1 xl:-translate-x-55 xl:-translate-y-78">
-            </div>
+            </motion.div>
+            <div
+                className="hidden
+                    lg:block absolute bottom-1 left-0 
+                    -translate-x-[45%] -translate-y-1/2
+                    pointer-events-none z-auto">
+                <motion.div
+                    className="border border-amber-500 rounded-full md:py-16 md:px-3 lg:py-18 lg:px-6 bg-transparent"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, ease: 'easeOut' }}
+                />
+                </div>
+                <div
+                className="hidden
+                    lg:block absolute top-0 right-1 
+                    -translate-x-1/2 -translate-y-1/2
+                    pointer-events-none">
+                <motion.div
+                    className="border border-amber-500 rounded-full md:py-2 md:px-16 lg:py-6 lg:px-16 bg-transparent"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+                />
+                </div>
+        </div>
         </motion.div>
         <div className="my-30">
             <div className="relative text-[#ffffff] ">
@@ -124,10 +144,10 @@ const HomePage = () => {
                     transition={{duration:0.6}}
                     >
                         <Image 
-                        src="/images/p1.png"
+                        src="/images/hp1.png"
                         alt="p1"
-                        width={50}
-                        height={50}
+                        width={500}
+                        height={300}
                         className="w-full h-auto"/>
                         <div className="mt-10 md:my-10">
                             <h2 className="text-xl md:text-3xl font-bold mb-5">
@@ -154,8 +174,8 @@ const HomePage = () => {
                         <Image 
                         src="/images/p2.png"
                         alt="p1"
-                        width={50}
-                        height={50}
+                        width={500}
+                        height={300}
                         className="w-full h-auto"/>
                         <div className="mt-10 md:my-10">
                             <h2 className="text-xl md:text-3xl font-bold mb-5">
@@ -177,8 +197,8 @@ const HomePage = () => {
                         <Image 
                         src="/images/p3.png"
                         alt="p1"
-                        width={50}
-                        height={50}
+                        width={500}
+                        height={300}
                         className="w-full h-auto"/>
                         <div className="mt-10 md:my-10">
                             <h2 className="text-xl md:text-3xl font-bold mb-5">
@@ -200,8 +220,8 @@ const HomePage = () => {
                         <Image 
                         src="/images/p4.png"
                         alt="p1"
-                        width={50}
-                        height={50}
+                        width={500}
+                        height={300}
                         className="w-full h-auto"/>
                         <div className="mt-10 md:my-10">
                             <h2 className="text-xl md:text-3xl font-bold mb-5">
